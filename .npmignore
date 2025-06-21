@@ -1,0 +1,20 @@
+# Source files
+src/
+examples/
+
+# Development files
+tsconfig.json
+bun.lock
+.gitignore
+.npmignore
+
+# Build artifacts (keep dist/)
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db 

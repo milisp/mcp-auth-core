@@ -1,0 +1,55 @@
+{
+  "name": "mcp-auth-core",
+  "version": "0.1.0",
+  "description": "Universal Authentication for MCP Servers - The standard that everyone should follow",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "authentication",
+    "oauth",
+    "oauth2",
+    "auth",
+    "google",
+    "github",
+    "slack",
+    "microsoft"
+  ],
+  "author": "milisp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milisp/mcp-auth-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/milisp/mcp-auth-core/issues"
+  },
+  "homepage": "https://github.com/milisp/mcp-auth-core#readme",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
